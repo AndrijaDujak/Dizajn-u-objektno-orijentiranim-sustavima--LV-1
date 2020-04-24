@@ -6,16 +6,16 @@ namespace Dizaj_LV_1
 {
     class Zabiljeska
     {
-        protected string zabiljeska {
+        public string zabiljeska {
             get { return this.zabiljeska; }
             set { this.zabiljeska = value; }
         }
-        protected string autor
+        public string autor
         {
             get { return this.autor; }
             set { if (this.autor == null) { this.autor = value; } }
         }
-        protected int vaznost
+        public int vaznost
         {
             get { return this.vaznost; }
             set { this.vaznost = value; }
@@ -54,7 +54,7 @@ namespace Dizaj_LV_1
         }
         public override string ToString()
         {
-            return this.zabiljeska +","+ this.autor;
+            return this.zabiljeska +","+ this.autor+"\n";
         }
     }
 }
